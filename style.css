@@ -116,27 +116,53 @@ footer {
   margin: 1rem auto;
   display: block;
 }
+.rsvp-section {
+  padding: 2rem 1rem;
+  background-color: #f9f6f0;
+}
+
+.rsvp-section h2 {
+  margin-left: auto;
+  margin-right: 3rem;
+  text-align: right;
+  font-size: 1.8rem;
+  color: #7c3aed;
+  font-family: 'Georgia', serif;
+}
+
 .rsvp-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background: #fffdf5;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  align-items: flex-end;
+  margin-right: 3rem;
+  max-width: 500px;
+  margin-left: auto;
 }
 
 .rsvp-form input,
 .rsvp-form select,
 .rsvp-form textarea {
-  padding: 14px;
-  font-size: 1.1rem;
   width: 100%;
-  border: 1px solid #ccc;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 1rem;
   border-radius: 8px;
+  border: 1px solid #ccc;
   box-sizing: border-box;
-
 }
 
+.rsvp-form button {
+  background-color: #7c3aed;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.rsvp-form button:hover {
+  background-color: #5b21b6;
+}
