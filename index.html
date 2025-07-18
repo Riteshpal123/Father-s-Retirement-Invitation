@@ -1,66 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dad’s Retirement Party</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retirement Invitation</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>🎉 You're Invited! 🎉</h1>
-    <p>We cordially invite you to celebrate the well-deserved retirement of [Shri Premchand Pal]! After years 
-        of dedicated service, he's embarking on a new chapter, and we'd love for you
-         to join us as we honor his career and achievements. Join us in celebrating Dad’s retirement!</p>
-    <div id="countdown">⏳ Loading countdown...</div>
+    <p class="subtitle">
+      We cordially invite you to celebrate the well-deserved retirement of <strong>Shri Premchand Pal</strong>!<br/>
+      After years of dedicated service, he's embarking on a new chapter.
+    </p>
+    <div class="countdown">⏳ <span id="timer">Loading countdown...</span></div>
   </header>
+  <section class="photo">
+  <h2>📸 A Glimpse of His Journey</h2>
+  <img src="your-photo.jpg" alt="Shri Premchand Pal" class="main-photo">
+</section>
+
 
   <section class="event-details">
     <h2>📅 Event Details</h2>
-    <p><strong>Date:</strong> 3rd August 2025</p>
-    <p><strong>Time:</strong> 7:00 PM</p>
-    <p><strong>Venue:</strong> DD Farm House Near Tigri Gol Chakkar Ghaziabad UP</p>
+    <ul>
+      <li><strong>Date:</strong> 3rd August 2025</li>
+      <li><strong>Time:</strong> 7:00 PM</li>
+      <li><strong>Venue:</strong> DD Farm House, Near Tigri Gol Chakkar, Ghaziabad, UP</li>
+    </ul>
   </section>
-<section>
- <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9023846363643!2d77.41121727451!3d28.632687584075498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef76031e6785%3A0xca71b8fd4009e19e!2sDD%20FARMS!5e0!3m2!1sen!2sin!4v1752821989181!5m2!1sen!2sin"
-  width="100%"
-  height="300"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-</section>
-<section class="gallery">
-  <h2>📸 Memories Through the Years</h2>
-  <div class="photo-grid">
-    <img src="dad1.jpg" alt="Dad 1">
-    <img src="dad2.jpg" alt="Dad 2">
 
-    
-  </div>
-</section>
-
-
-  <section class="rsvp">
-    <h2>📝 RSVP</h2>
-    <form id="rsvpForm">
-      <input type="text" name="name" placeholder="Your Name" required>
-      
-      <select name="attending" required>
-         <option value="">Will you attend?</option>
-  <option value="yes">Yes, I will attend</option>
-      </select>
-      <button type="submit">Submit</button>
-    </form>
-    <p id="response"></p>
+  <section class="map-container">
+    <h2>📍 Location</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.123456... (shorten/embed yours)"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
   </section>
 
   <footer>
-    <p>❤️❤️ Made with love for Dad’s big day ❤️❤️</p>
+    <p>We look forward to seeing you there! 🎊</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

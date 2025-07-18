@@ -1,75 +1,86 @@
 body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff8f0;
-  color: #333333;
-}
-
-header, footer {
-  background-color: #8e44ad;
-  color: rgb(157, 204, 212);
-  padding: 20px;
-  text-align: center;
-  border-radius: 0 0 12px 12px;
-}
-
-section {
-  background-color: #6dc5e0;
-  color: #333333;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
-  color: #8e44ad;
-}
-
-a {
-  color: #8e44ad;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-button {
-  background-color: #f39c12;
-  color: rgb(158, 209, 218);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
-button:hover {
-  background-color: #d35400;
-}
-
-.photo-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-
-.photo-grid img {
-  max-width: 100px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  object-fit: cover;
-}
-
-#countdown {
-  background-color: #fef4e8;
-  padding: 10px;
-  margin-top: 15px;
-  border-radius: 8px;
-  font-weight: bold;
-}
-body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background: #f4f8fb;
+  color: #333;
 }
+
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 5px solid #2d6cdf;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.countdown {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  background: white;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #4a90e2;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.event-details {
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.event-details h2 {
+  margin-top: 0;
+  color: #2d6cdf;
+}
+
+.event-details ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.map-container {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+  border-radius: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #f0f0f0;
+  color: #444;
+}
+.photo {
+  text-align: center;
+  padding: 2rem;
+}
+
+.main-photo {
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
