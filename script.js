@@ -1,6 +1,6 @@
 // Countdown Timer to 31st July 2025 6PM
 const countdown = document.getElementById('countdown');
-const eventDate = new Date("July 31, 2025 18:00:00").getTime();
+const eventDate = new Date("3rd August 2025, 18:00:00").getTime();
 
 setInterval(() => {
   const now = new Date().getTime();
