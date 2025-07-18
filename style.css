@@ -119,19 +119,24 @@ footer {
 .rsvp-form {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  max-width: 500px;
-  margin: auto;
-  padding: 2rem;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fffdf5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .rsvp-form input,
 .rsvp-form select,
 .rsvp-form textarea {
-  padding: 13px;
-  border: 2px solid #ccc;
-  border-radius: 9px;
-  font-size: 1rem;
+  padding: 14px;
+  font-size: 1.1rem;
   width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+
 }
 
