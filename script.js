@@ -1,8 +1,6 @@
 
 const countdown = document.getElementById('countdown');
-const eventDate = new Date("2025-08-03T18:00:00+05:30").getTime();
-
-
+const eventDate = new Date("August 3, 2025 18:00:00").getTime();
 setInterval(() => {
   const now = new Date().getTime();
   const diff = eventDate - now;
