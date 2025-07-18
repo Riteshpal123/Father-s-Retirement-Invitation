@@ -1,12 +1,12 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #87CEEB; /* Sky Blue */
-  color: #001F3F; /* Deep Navy for readability */
+  background-color: #fff8f0;
+  color: #333333;
 }
 
 header, footer {
-  background-color: #4169E1; /* Royal Blue */
+  background-color: #8e44ad;
   color: white;
   padding: 20px;
   text-align: center;
@@ -14,20 +14,20 @@ header, footer {
 }
 
 section {
-  background-color: #f9f9f9; /* Light background for contrast */
-  color: #000; /* Black text for readability */
+  background-color: #ffffff;
+  color: #333333;
   padding: 20px;
   margin: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
-  color: #ffffff;
+  color: #8e44ad;
 }
 
 a {
-  color: #001F3F;
+  color: #8e44ad;
   text-decoration: none;
 }
 a:hover {
@@ -35,7 +35,7 @@ a:hover {
 }
 
 button {
-  background-color: #4169E1;
+  background-color: #f39c12;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -44,8 +44,9 @@ button {
   font-weight: bold;
 }
 button:hover {
-  background-color: #27408B; /* Darker Royal Blue */
+  background-color: #d35400;
 }
+
 .photo-grid {
   display: flex;
   justify-content: center;
@@ -55,9 +56,20 @@ button:hover {
 }
 
 .photo-grid img {
-  max-width: 300px;
+  max-width: 100px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   object-fit: cover;
+}
+
+#countdown {
+  background-color: #fef4e8;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
 }
