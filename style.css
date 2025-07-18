@@ -7,14 +7,14 @@ body {
 
 header, footer {
   background-color: #8e44ad;
-  color: white;
+  color: rgb(157, 204, 212);
   padding: 20px;
   text-align: center;
   border-radius: 0 0 12px 12px;
 }
 
 section {
-  background-color: #ffffff;
+  background-color: #6dc5e0;
   color: #333333;
   padding: 20px;
   margin: 20px;
@@ -36,7 +36,7 @@ a:hover {
 
 button {
   background-color: #f39c12;
-  color: white;
+  color: rgb(158, 209, 218);
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
