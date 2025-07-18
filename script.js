@@ -1,14 +1,21 @@
-const countdownElement = document.getElementById("timer");
+const countdown = document.getElementById("countdown");
 const eventDate = new Date("August 3, 2025 19:00:00").getTime();
 
-setInterval(() => {
+function updateCountdown() {
   const now = new Date().getTime();
-  const distance = eventDate - now;
+  const timeLeft = eventDate - now;
 
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hrs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  const secs = Math.floor((distance % (1000 * 60)) / 1000);
+  if (timeLeft < 0) {
+    countdown.textContent = "🎉 The celebration has begun!";
+    return;
+  }
 
-  countdownElement.innerHTML = `${days}d ${hrs}h ${mins}m ${secs}s left`;
-}, 1000);
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  const hrs = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const mins = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  const secs = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+  countdown.textContent = `${days}d ${hrs}h ${mins}m ${secs}s left`;
+}
+
+setInterval(updateCountdown, 1000);
