@@ -88,7 +88,7 @@ body {
   padding: 0;
   background: linear-gradient(to bottom, #f5f0e6, #dbc0a8); /* beige to soft brown */
   font-family: 'Georgia', serif;
-  color: #4B2E2E; /* Correct deep brown for text */
+  color: #7b618a; /* Correct deep brown for text */
   line-height: 1.6;
 }
 
@@ -124,7 +124,7 @@ section {
 }
 
 section h2 {
-  color: #5b3923;
+  color: #7b618a;
   margin-bottom: 20px;
 }
 
@@ -186,5 +186,5 @@ footer {
   padding: 20px;
   font-size: 1em;
   margin-top: 40px;
-  border-top: 4px solid #8a5f3c;
+  border-top: 4px solid #7b618a;
 }
