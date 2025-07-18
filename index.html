@@ -40,19 +40,19 @@
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.333606087003!2d77.41121727450998!3d28.632687584075498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef76031e6785%3A0xca71b8fd4009e19e!2sDD%20FARMS!5e1!3m2!1sen!2sin!4v1752831174931!5m2!1sen!2sin" 
 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
-  <section class="rsvp">
-    <h2>📝 RSVP</h2>
-    <form id="rsvpForm">
-      <input type="text" name="name" placeholder="Your Name" required>
-      
-      <select name="attending" required>
-         <option value="">Will you attend?</option>
-  <option value="yes">Yes, I will attend</option>
-      </select>
-      <button type="submit">Submit</button>
-    </form>
-    <p id="response"></p>
-  </section>
+  <section id="rsvp" class="rsvp-section">
+  <h2>📩 RSVP</h2>
+  <form class="rsvp-form">
+    <input type="text" placeholder="Your Name" required />
+    <select required>
+      <option value="">Will you attend?</option>
+      <option value="yes i will be there">Yes</option>
+    
+    </select>
+    <textarea placeholder="Leave a message or comment..." rows="4"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
 
   
 
