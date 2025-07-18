@@ -2,49 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dad’s Retirement Party</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-
   <header>
     <h1>🎉 You're Invited! 🎉</h1>
-    <p>Join us in celebrating Dad’s retirement!</p>
-    <div id="countdown"></div>
+    <p>We cordially invite you to celebrate the well-deserved retirement of [Shri Premchand Pal]! After years 
+        of dedicated service, he's embarking on a new chapter, and we'd love for you
+         to join us as we honor his career and achievements. Join us in celebrating Dad’s retirement!</p>
+    <div id="countdown">⏳ Loading countdown...</div>
   </header>
 
-  <section class="details">
+  <section class="event-details">
     <h2>📅 Event Details</h2>
-    <p><strong>Date:</strong> 31st July 2025<br>
-       <strong>Time:</strong> 6:00 PM<br>
-       <strong>Venue:</strong> Community Hall, Sector 12</p>
+    <p><strong>Date:</strong> 3rd August 2025</p>
+    <p><strong>Time:</strong> 7:00 PM</p>
+    <p><strong>Venue:</strong> DD Farm House Near Tigri Gol Chakkar Ghaziabad UP</p>
   </section>
+
+  <section class="location">
+  <h2>📍 Location</h2>
+  <p>DD Farm House Tigri Gol Chakkar Ghaziabad</p>
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/place/DD+FARMS/@28.6326829,77.3957678,15z/
+      data=!4m10!1m2!2m1!1sdd+farm+house+tigri+gol+chakkar!3m6!1s0x390cef76031e6785:0xca71b8fd4009e19e!8m2!
+      3d28.6326829!4d77.4137922!15sCh9kZCBmYXJtIGhvdXNlIHRpZ3JpIGdvbCBjaGFra
+      2FyWiEiH2RkIGZhcm0gaG91c2UgdGlncmkgZ29s
+      IGNoYWtrYXKSAQxiYW5xdWV0X2hhbGyqAVsQASoRIg1kZCBmYXJtIGhvdXNlKAAyHxABIhsLr7myCTwRnHZO7dA5lJ_H9x
+      GrSDW5Gu3OSKMyIxACIh9kZCBmYXJtIGhvdXNlIHRpZ3JpIGdvbCBjaGFra2Fy4AEA
+      !16s%2Fg%2F11ptv69_wm?entry=ttu&g_ep=EgoyMDI1MDcxNS4xIKXMDSoASAFQAw%3D%3D"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
 
   <section class="gallery">
     <h2>📸 Memories Through the Years</h2>
     <div class="photo-grid">
-      <img src="images/dad1.jpg" alt="Dad 1"/>
-      <img src="images/dad2.jpg" alt="Dad 2"/>
-      <img src="images/dad3.jpg" alt="Dad 3"/>
-      <!-- Add more images -->
+      <img src="https://via.placeholder.com/300?text=Dad+1" alt="Dad 1">
+      <img src="https://via.placeholder.com/300?text=Dad+2" alt="Dad 2">
+      <img src="https://via.placeholder.com/300?text=Dad+3" alt="Dad 3">
     </div>
   </section>
 
   <section class="rsvp">
-    <h2>📩 RSVP</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Leave a message!"></textarea>
-      <button type="submit">Send RSVP</button>
+    <h2>📝 RSVP</h2>
+    <form id="rsvpForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <select name="attending" required>
+        <option value="">Will you attend?</option>
+        <option value="yes">Yes, I’ll be there!</option>
+        <option value="no">Sorry, can’t make it</option>
+      </select>
+      <button type="submit">Submit</button>
     </form>
+    <p id="response"></p>
   </section>
 
   <footer>
-    <p>Made with ❤️ for Dad's Retirement</p>
+    <p>❤️❤️ Made with love for Dad’s big day ❤️❤️</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
