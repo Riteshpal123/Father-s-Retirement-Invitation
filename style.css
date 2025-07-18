@@ -46,3 +46,18 @@ button {
 button:hover {
   background-color: #27408B; /* Darker Royal Blue */
 }
+.photo-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.photo-grid img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  object-fit: cover;
+}
