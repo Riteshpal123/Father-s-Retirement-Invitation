@@ -1,14 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Happy Retirement, Papa!</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dad’s Retirement Party</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <h1>🎉 Happy Retirement, Papa! 🎉</h1>
-  <img src="dad.jpg" alt="Dad's photo" />
-  <p>After 30+ years of hard work, it's time to relax and enjoy life!</p>
-  <h2>You are Invited</h2>
-  <p>Date: 31st July 2025<br>Time: 7:00 PM<br>Venue: DD FARM HOUSE TIGRI GOL CHAKKAR GHAZIABAD</p>
+
+  <header>
+    <h1>🎉 You're Invited! 🎉</h1>
+    <p>Join us in celebrating Dad’s retirement!</p>
+    <div id="countdown"></div>
+  </header>
+
+  <section class="details">
+    <h2>📅 Event Details</h2>
+    <p><strong>Date:</strong> 31st July 2025<br>
+       <strong>Time:</strong> 6:00 PM<br>
+       <strong>Venue:</strong> Community Hall, Sector 12</p>
+  </section>
+
+  <section class="gallery">
+    <h2>📸 Memories Through the Years</h2>
+    <div class="photo-grid">
+      <img src="images/dad1.jpg" alt="Dad 1"/>
+      <img src="images/dad2.jpg" alt="Dad 2"/>
+      <img src="images/dad3.jpg" alt="Dad 3"/>
+      <!-- Add more images -->
+    </div>
+  </section>
+
+  <section class="rsvp">
+    <h2>📩 RSVP</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Leave a message!"></textarea>
+      <button type="submit">Send RSVP</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ for Dad's Retirement</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
